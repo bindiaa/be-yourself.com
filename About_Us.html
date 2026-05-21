@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Bindia</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f9f9f9;
+      color:#333;
+      line-height:1.7;
+    }
+
+    header{
+      background:#b22222;
+      color:white;
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      font-size:28px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:bold;
+    }
+
+    .about-section{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    .about-section h2{
+      text-align:center;
+      font-size:42px;
+      color:#b22222;
+      margin-bottom:20px;
+    }
+
+    .intro{
+      text-align:center;
+      font-size:18px;
+      margin-bottom:50px;
+      color:#555;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      color:#b22222;
+      margin-bottom:15px;
+    }
+
+    .mission{
+      margin-top:60px;
+      text-align:center;
+      background:white;
+      padding:40px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .mission h3{
+      color:#b22222;
+      margin-bottom:15px;
+      font-size:30px;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bindia</h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+
+    <h2>About Us</h2>
+
+    <p class="intro">
+      <strong>Bindia</strong> is a social initiative dedicated to empowering rural and underprivileged women 
+      through the preservation of traditional art forms, folk music, and cultural heritage.
+      Our mission is to create sustainable livelihood opportunities while reviving indigenous 
+      cultural practices that are gradually disappearing.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>🌸 Women Empowerment</h3>
+        <p>
+          We uplift marginalized women through skill development, employment generation, 
+          and entrepreneurship opportunities that help build financial independence.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎨 Preserving Heritage</h3>
+        <p>
+          Bindia works to preserve traditional crafts, folk music, and indigenous cultural 
+          practices by connecting artisans with modern audiences and markets.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🛍 Sustainable Livelihoods</h3>
+        <p>
+          Through quality product development, attractive packaging, online marketing, 
+          and organized sales networks, we create sustainable income opportunities.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌍 Vision for the Future</h3>
+        <p>
+          Our vision is to connect traditional skills with modern markets while promoting 
+          social development, cultural sustainability, and better family welfare.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="mission">
+      <h3>Our Mission</h3>
+
+      <p>
+        “Bindia” aims to transform traditional talents into sustainable livelihoods,
+        empowering women economically while celebrating and preserving India’s rich
+        cultural heritage for future generations.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Bindia | Empowering Women Through Culture & Creativity</p>
+  </footer>
+
+</body>
+</html>

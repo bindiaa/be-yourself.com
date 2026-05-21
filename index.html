@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #2563eb, #60a5fa);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background: white;
+      color: #2563eb;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e5e7eb;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>MyWebsite</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Create beautiful websites with simple HTML & CSS.</p>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>Fast</h3>
+      <p>Optimized and responsive design for all devices.</p>
+    </div>
+
+    <div class="card">
+      <h3>Modern</h3>
+      <p>Clean and stylish UI with modern layouts.</p>
+    </div>
+
+    <div class="card">
+      <h3>Easy</h3>
+      <p>Simple structure for beginners to understand.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

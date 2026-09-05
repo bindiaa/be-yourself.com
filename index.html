@@ -1,153 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bindia</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background: #2563eb;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-.logo {
-  height: 60px;
-  width: auto;
-  display: block;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-}
-    .hero {
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(to right, #2563eb, #60a5fa);
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      padding: 12px 24px;
-      background: white;
-      color: #2563eb;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #e5e7eb;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 50px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bindia — from our fields to your table. Empowering farmers and rural women through quality agricultural products.">
+  <title>Bindia | From Our Fields To Your Table</title>
+  <link rel="preload" as="image" href="assets/homepage-design.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bindia home">
+      <img src="assets/bindia-logo.png" alt="Bindia — Be Your Self">
+    </a>
 
-  <header>
-   <div class="logo-container">
-  <img
-    class="logo"
-    src="https://github.com/user-attachments/assets/86558765-bd3d-4d50-9625-255088a1d366"
-    alt="Bindia Logo"
-    height = "25"
-    width = "25">
-</div>
-    <nav>
-      <a href="https://bindiaa.github.io/be-yourself.com/">Home</a>
-      <a href="About_Us.html">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#farmers">Our Farmers</a>
+      <a href="#products">Products</a>
+      <a href="#sustainability">Sustainability</a>
+      <a href="#news">News & Events</a>
+      <a href="#contact">Contact Us</a>
+      <a class="nav-cta" href="#contact">Partner With Us <span>↗</span></a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Bindia - Be Yourself</h1>
-    <p>Create beautiful websites with simple HTML & CSS.</p>
-    <a href="#" class="btn">Get Started</a>
-  </section>
+  <main>
+    <section id="home" class="hero">
+      <img class="design-image" src="assets/homepage-design.png"
+           alt="Bindia agricultural brand homepage showing farmers harvesting makhana, women working in fields and Bindia products">
+      <div class="hero-overlay">
+        <div class="hero-copy">
+          <p class="eyebrow">ROOTED IN NATURE • BUILT FOR PEOPLE</p>
+          <h1>From Our Fields<br><em>To Your Table</em></h1>
+          <p>Empowering farmers and rural women, preserving nature, delivering purity.</p>
+          <div class="hero-actions">
+            <a href="#products" class="button button-primary">Explore Our Products <span>→</span></a>
+            <a href="#farmers" class="button button-outline">Meet Our Farmers <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="features">
-    <div class="card">
-      <h3>Fast</h3>
-      <p>Optimized and responsive design for all devices.</p>
+    <section id="about" class="intro section">
+      <div>
+        <p class="eyebrow">OUR PURPOSE</p>
+        <h2>Good food begins with <span>good people.</span></h2>
+      </div>
+      <p>Bindia connects responsible sourcing, rural livelihoods and thoughtfully made food products. We work close to the field so that value reaches the people who grow and create it.</p>
+    </section>
+
+    <section id="farmers" class="impact section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR FARMERS & WOMEN</p>
+        <h2>Creating opportunity where it matters most.</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="icon">🌱</div><h3>Sustainable Farming</h3><p>Working with farming communities to encourage responsible, market-linked agriculture.</p></article>
+        <article class="card"><div class="icon">👩🏽‍🌾</div><h3>Empowering Women</h3><p>Creating meaningful work, skills and income opportunities for rural women.</p></article>
+        <article class="card"><div class="icon">🤝</div><h3>Stronger Livelihoods</h3><p>Building long-term relationships that help communities grow with the market.</p></article>
+      </div>
+    </section>
+
+    <section id="products" class="products section">
+      <div class="section-heading">
+        <p class="eyebrow">BINDIA PRODUCTS</p>
+        <h2>From farm harvest to <span>everyday goodness.</span></h2>
+        <p>Explore the makhana range shown in our homepage design.</p>
+      </div>
+      <div class="product-grid">
+        <article><h3>Makhana Roasted</h3><p>Lightly Salted</p></article>
+        <article><h3>Makhana Peri Peri</h3><p>Tangy & Spicy</p></article>
+        <article><h3>Makhana Pudina</h3><p>Cooling & Refreshing</p></article>
+        <article><h3>Makhana Masala</h3><p>Authentic & Flavorful</p></article>
+        <article><h3>Makhana Black Pepper</h3><p>Bold & Aromatic</p></article>
+      </div>
+    </section>
+
+    <section id="sustainability" class="values section">
+      <div class="value"><strong>500+</strong><span>Farmers Empowered</span></div>
+      <div class="value"><strong>80%+</strong><span>Women Workforce</span></div>
+      <div class="value"><strong>100%</strong><span>Natural & Preservative Free</span></div>
+      <div class="value"><strong>♥</strong><span>Quality You Can Trust</span></div>
+    </section>
+
+    <section id="news" class="statement">
+      <p>Grown With Care. Made With Love.</p>
+      <h2>Rooted in Tradition. Driven by Purpose.<br>Committed to a Better Tomorrow.</h2>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <img src="assets/bindia-logo.png" alt="Bindia" class="footer-logo">
+      <p>Be Your Self</p>
     </div>
-
-    <div class="card">
-      <h3>Modern</h3>
-      <p>Clean and stylish UI with modern layouts.</p>
+    <div>
+      <h3>Connect With Us</h3>
+      <a href="mailto:hello@bindia.in">hello@bindia.in</a>
+      <a href="#contact">Partner With Us</a>
     </div>
-
-    <div class="card">
-      <h3>Easy</h3>
-      <p>Simple structure for beginners to understand.</p>
+    <div>
+      <h3>Explore</h3>
+      <a href="#about">About Us</a>
+      <a href="#farmers">Our Farmers</a>
+      <a href="#products">Products</a>
     </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 MyWebsite. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
